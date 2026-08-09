@@ -1,0 +1,32 @@
+ <body>
+        <nav>
+<a href="index.html">Home</a> |
+<a href="about.html">About Me</a> |
+<a href="hobbies.html">Hobbies</a> |
+<a href="favorites.html">Favorites</a> |
+<a href="goals.html">Goals</a>
+</nav>
+<hr>
+ 
+    <h2>My Hobbies and Interests</h2>
+
+    <p>These are some of the hobbies and interests that describe me:</p>
+
+    <ul>
+        <li>online and video games</li>
+        <li>Playing instrumnet</li>
+        <li>Singing</li>
+        <li>Playing sports</li>
+    </ul>
+
+    <!-- Video -->
+    <video width="500" controls>
+        <source src="monitoring.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <p>
+        This video is related to anime song
+    </p>
+    <body>
+     </html>
