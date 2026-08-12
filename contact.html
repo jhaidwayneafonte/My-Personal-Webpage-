@@ -1,14 +1,107 @@
-<input type="Jhairelle Dwayne A Fonte">
-<input type="Jhaiskifonte@gmail.com">
-<input type="checkbox"> Technology
-<input type="checkbox"> Gaming
-<input type="checkbox"> Music
-<select>
-<option>General Inquiry</option>
-<option>Feedback</option>
-<option>Collaboration</option>
-<option>School Project</option>
-</select>
-<textarea rows="5" cols="40"></textarea>
-<input type="submit" value="Send Message">
-<input type="reset" value="Clear Form">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Me</title>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script>
+        emailjs.init({
+            publicKey: "d2qtMLP2W8dQh0WOk"
+        });
+    </script>
+</head>
+
+<body>
+
+    <h1>Contact Me</h1>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Me</a> |
+        <a href="hobbies.html">Hobbies</a> |
+        <a href="favorites.html">Favorites</a> |
+        <a href="goals.html">Goals</a> |
+        <a href="contact.html">Contact Me</a>
+    </nav>
+
+    <hr>
+
+    <form id="contact-form">
+
+        <!-- Name -->
+        <label for="name">Full Name:</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+        >
+
+        <br><br>
+
+        <!-- Gmail -->
+        <label for="email">Gmail:</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="jhaiskifonte@gmail.com"
+            required
+        >
+
+        <br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label>
+        <br>
+
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="gay" name="gender" value="Gay">
+        <label for="gay">Gay</label>
+
+        <input type="radio" id="lesbian" name="gender" value="Lesbian">
+        <label for="lesbian">Lesbian</label>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+
+        <br><br>
+
+        <!-- Strand -->
+        <label for="strand">Strand:</label>
+
+        <select id="strand" name="strand" required>
+            <option value="">Select Strand</option>
+            <option value="ICT">ICT</option>
+            <option value="STEM">STEM</option>
+            <option value="ABM">ABM</option>
+            <option value="GAS">GAS</option>
+            <option value="HUMSS">HUMSS</option>
+        </select>
+
+        <br><br>
+
+        <!-- Message -->
+        <label for="message">Message:</label>
+        <br>
+
+        <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="50"
+            placeholder="Type your message here..."
+            required
+        ></textarea>
