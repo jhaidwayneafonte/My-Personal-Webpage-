@@ -1,3 +1,17 @@
+<h1>Contact Me</h1>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About Me</a> |
+        <a href="hobbies.html">Hobbies</a> |
+        <a href="favorites.html">Favorites</a> |
+        <a href="goals.html">Goals</a> |
+        <a href="contact.html">Contact Me</a> |
+    </nav>
+
+    <hr>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,18 +33,6 @@
 
 <body>
 
-    <h1>Contact Me</h1>
-
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About Me</a> |
-        <a href="hobbies.html">Hobbies</a> |
-        <a href="favorites.html">Favorites</a> |
-        <a href="goals.html">Goals</a> |
-        <a href="contact.html">Contact Me</a>
-    </nav>
-
-    <hr>
 
     <form id="contact-form">
 
@@ -52,7 +54,7 @@
             type="email"
             id="email"
             name="email"
-            placeholder="jhaiskifonte@gmail.com"
+            placeholder="Enter your Gmail"
             required
         >
 
@@ -105,3 +107,44 @@
             placeholder="Type your message here..."
             required
         ></textarea>
+
+        <br><br>
+
+        <button type="submit">Send Message</button>
+        <button type="reset">Clear Form</button>
+
+    </form>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            emailjs.sendForm(
+                "service_pjh0uuc",
+                "template_hwwchig",
+                this
+            )
+            .then(function() {
+
+                alert("Message sent successfully!");
+
+                document.getElementById("contact-form").reset();
+
+            })
+            .catch(function(error) {
+
+                alert("Message failed to send. Please try again.");
+
+                console.error("EmailJS Error:", error);
+
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
+cdn.jsdelivr.net
+cdn.jsdelivr.net
