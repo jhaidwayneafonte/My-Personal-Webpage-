@@ -29,9 +29,6 @@
         });
     </script>
 </head>
-        
-    </script>
-</head>
 
 <body>
 
@@ -126,23 +123,23 @@
                 "service_yhy071k",
                 "template_x7c0gkh",
                 this
-            
+            )
             .then(function() {
 
                 alert("Message sent successfully!");
 
                 document.getElementById("contact-form").reset();
 
-           
+            })
             .catch(function(error) {
 
                 alert("Message failed to send. Please try again.");
 
                 console.error("EmailJS Error:", error);
 
-            
+            });
 
-      
+        });
     </script>
 
 </body>
