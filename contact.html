@@ -24,9 +24,9 @@
     <script src=h"https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <script>
-        emailjs.init({
-            publicKey: "d2qtMLP2W8dQh0WOk"
-        });
+        emailjs.init
+            publicKey:"0s7Bky-7zhAEaSwCu"
+        
     </script>
 </head>
 
@@ -123,23 +123,23 @@
                 "service_yhy071k",
                 "template_hl064c5",
                 this
-            )
+            
             .then(function() {
 
                 alert("Message sent successfully!");
 
                 document.getElementById("contact-form").reset();
 
-            })
+           
             .catch(function(error) {
 
                 alert("Message failed to send. Please try again.");
 
                 console.error("EmailJS Error:", error);
 
-            });
+            
 
-        });
+      
     </script>
 
 </body>
