@@ -1,48 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Profile Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header id="main-header">
-        <h1>My Personal Website</h1>
-        <p class="profile-info">Welcome to my personal website!</p>
-    </header>
-
+  
+  <header class="navbar">
+    <div class="logo">MyProfile</div>
     <nav>
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About Me</a>
-        <a class="nav-link" href="hobbies.html">Hobbies</a>
-        <a class="nav-link" href="favorites.html">Favorites</a>
-        <a class="nav-link" href="goals.html">Goals</a>
-        <a class="nav-link" href="contact.html">Contact Me</a>
+      <ul class="nav-links">
+        <li><a href="#about" class="active">About Me</a></li>
+        <li><a href="#skills">Skills & Hobbies</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <main class="content-box">
+  
+  <main class="container">
+    <section id="about" class="card clearfix">
+      <div class="profile-img-container">
+        <!-- Replace src with your image file path -->
+        <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
+      </div>
+      <h2>About Me</h2>
+      <p>
+        Hello! Welcome to my personal profile website. I am passionate about web development, 
+        design, and building functional applications. This page demonstrates the layout capabilities 
+        of CSS including positioning, box model properties, and styling lists and links.
+      </p>
+    </section>
 
-        <h2 class="section-title">Welcome!</h2>
+    <section id="skills" class="card">
+      <h2>My Hobbies & Interests</h2>
+      <ul class="custom-list">
+        <li>Web Design & Coding</li>
+        <li>Digital Art & Photography</li>
+        <li>Reading Science Fiction</li>
+        <li>Playing Video Games</li>
+      </ul>
+    </section>
 
-         <p class="profile-info">
-            Hello! My name is Jhairelle Dwayne A fonte. Welcome to my personal website.
-            This website contains information about me, my hobbies,
-            favorite things, goals, and how you can contact me.
-        </p>
+    <!-- Contact Me Form Section -->
+    <section id="contact" class="card">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
 
-        <p class="profile-info">
-            Feel free to explore the different pages using the navigation menu.
-        </p>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
 
-    </main>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+        </div>
 
-    <footer>
-        <p>My Personal Website</p>
-    </footer>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Personal Profile Website. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
