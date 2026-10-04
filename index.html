@@ -1,73 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Profile Website</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Personal Profile</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  
-  <header class="navbar">
-    <div class="logo">MyProfile</div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    
+    <header>
+        <h1>My Personal Profile</h1>
+        <p>Welcome to my personal website!</p>
+    </header>
 
-  <main class="container">
-    
-    
-    <section id="about" class="card profile-section">
-      <img src="profile.jpg" alt="Profile Picture" class="profile-img">
-      <div class="profile-bio">
-        <h1>Jhairelle Dwayne A Fonte</h1>
-        <h2>ICT Student</h2>
-        <p>Welcome to my personal profile website! i love coding.</p>
-      </div>
-      <div class="clear"></div>
-    </section>
-
-    
-    <section id="skills" class="card">
-      <h2>Skills & Interests</h2>
-      <ul class="styled-list">
-        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML5 Semantic Structure</a></li>
-        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS Box Model & Positioning</a></li>
-        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">Basic JavaScript</a></li>
-      </ul>
-    </section>
 
    
-    <section id="contact" class="card">
-      <h2>Contact Me</h2>
-      <form class="contact-form">
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#multimedia">goals</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+
+  
+    <section id="home" class="section">
+        <h2>Home</h2>
+
+        <div class="welcome-box">
+            <h3>Welcome!</h3>
+            <p>
+                Hello! Welcome to my personal profile website.
+                This website contains information about me,
+                my hobbies, interests, multimedia, and contact information.
+            </p>
         </div>
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <button type="submit">Send Message</button>
-      </form>
     </section>
 
-  </main>
 
-  <footer>
-    <p>&copy; 2026 My Personal Profile Website. All rights reserved.</p>
-  </footer>
+    
+    <section id="about" class="section">
+        <h2>About Me</h2>
+
+        
+        <img src="profile.jpg" alt="My Profile Picture" class="profile-image">
+
+        <p>
+            Hello! My name is <strong>Jhairelle</strong>.
+            I am a student who is interested in technology,
+            programming, gaming, and learning new things.
+        </p>
+
+        <p>
+            I created this website to introduce myself and
+            demonstrate different CSS properties that I learned.
+        </p>
+
+        <div class="clear"></div>
+    </section>
+
+
+   
+    <section id="hobbies" class="section">
+        <h2>My Hobbies</h2>
+
+        <p>Here are some of my hobbies and interests:</p>
+
+        
+        <ul class="hobby-list">
+            <li>Playing video games</li>
+            <li>Listening to music</li>
+            <li>Programming</li>
+            <li>Watching movies</li>
+            <li>Learning new technology</li>
+        </ul>
+
+        <h3>My Favorite Activities</h3>
+
+        <ol class="activity-list">
+            <li>Gaming</li>
+            <li>Coding</li>
+            <li>Listening to music</li>
+            <li>Spending time with friends</li>
+        </ol>
+    </section>
+
+
+   
+    <section id="multimedia" class="section">
+        <h2>Multimedia</h2>
+
+        <p>Here is an example of multimedia content:</p>
+
+        <img src="my-photo.jpg" alt="My Photo" class="media-image">
+
+        <br><br>
+
+        <audio controls>
+            <source src="music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+
+    
+    <section class="section">
+        <h2>My Links</h2>
+
+        <p>Visit some of my favorite websites:</p>
+
+        <ul class="links-list">
+            <li>
+                <a href="https://www.github.com" target="_blank">
+                    GitHub
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.youtube.com" target="_blank">
+                    YouTube
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.google.com" target="_blank">
+                    Google
+                </a>
+            </li>
+        </ul>
+    </section>
+
+
+   
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+
+        <form>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+    </section>
+
+
+  
+    <section class="section">
+        <h2>Z-index and Position</h2>
+
+        <div class="z-container">
+
+            <div class="box box-one">
+                Box 1
+            </div>
+
+            <div class="box box-two">
+                Box 2
+            </div>
+
+        </div>
+    </section>
+
+
+   
+    <footer>
+        <p>&copy; 2026 My Personal Profile. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
